@@ -1,4 +1,4 @@
-let totalPoints = 30;
+let totalPoints = 0;
 
 function addPoints(points) {
     totalPoints += points;
@@ -8,6 +8,6 @@ function addPoints(points) {
 
 function updateProgress() {
     const progress = document.getElementById('progress');
-    const percentage = (totalPoints / 30) * 30; // Assuming 100 points is the goal
+    const percentage = (totalPoints / 100) * 100; // Assuming 100 points is the goal
     progress.style.width = `${percentage}%`;
 }
